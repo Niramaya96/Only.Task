@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 }
+
 .container{
 	background-image: url("../resources/image.png");
 	background-repeat: no-repeat;
@@ -13,9 +14,21 @@
 	position: relative;
 }
 
-.button1.expand, .button2.expand{
-	width: 200px;
-	border-radius: 50px;
+.mybtn.expand {
+  width: 200px;
+  border-radius: 50px;
+}
+.mybtn > :last-child {
+  display: none;
+}
+.mybtn.expand > :last-child {
+  display: inline;
+}
+.mybtn > :first-child {
+  float: none;
+}
+.mybtn.expand > :first-child {
+  float: left;
 }
 
 .button1 {
@@ -26,7 +39,7 @@
 	height: 50px;
 	background-color: rgba(56, 119, 238, 0.8);
 	border-radius: 50px;
-	position: absolute;
+	position: fixed;
 }
 
 .button2 {
